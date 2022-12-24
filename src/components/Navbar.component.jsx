@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { Menu, Close } from "@mui/icons-material"
-
+import FFI from './../assets/logo.png'
 
 export default function Navbar() {
     const [sidebarActive, setSidebarActive] = useState(false)
@@ -18,7 +18,7 @@ export default function Navbar() {
     return (
         <div className="rounded-lg" id="navbar">
             <div className="m-5 mb-2 mx-7 flex rounded-lg" style={{ color: "#374063" }}>
-                <a href="/#landing" className="">FFI</a>
+                <a href="/#landing" className=""><img style={{ height: "70px" }} src={FFI} alt="FFI"></img></a>
                 <button onClick={handleSidebarToggle} className="ml-auto md:hidden">
                     {sidebarActive ? <Close /> : <Menu />}
                 </button>

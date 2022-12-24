@@ -10,3 +10,12 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+.neomorphic {
+  height: 250px;
+  -webkit-border-radius: 24px;
+  border-radius: 24px;
+  background: #c1c8e4;
+  -webkit-box-shadow: 5px 5px 22px #aab0c9, -5px -5px 22px #d8e0ff;
+  box-shadow: 5px 5px 22px #aab0c9, -5px -5px 22px #d8e0ff;
+}

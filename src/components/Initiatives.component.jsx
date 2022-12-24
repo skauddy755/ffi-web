@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence, AnimateSharedLayout } from 'framer-motion';
 
 const variants = {
@@ -63,16 +63,16 @@ export default function Initiatives() {
             <AnimateSharedLayout>
                 <div className='flex flex-col xl:flex-row justify-between items-center'>
                     <div>
-                        <h2 className="text-center xl:text-left mb-8 xl:mb-0 pt-24 xl:pt-10 mb-3 mx-4 text-7xl md:text-8xl font-bold tracking-tighter" style={{ color: "#7F94E8" }}>Initiatives</h2>
+                        <h2 className="text-center xl:text-left mb-8 xl:mb-0 pt-24 xl:pt-10 mb-3 mx-4 text-5xl md:text-8xl font-bold tracking-tighter" style={{ color: "#374063" }}>Initiatives</h2>
                     </div>
                     <div className='mx-32'>
                         <div className='flex justify-center'>
-                            <button className='rounded-xl p-10 text-white text-center py-20' style={{ background: "#7F94E8", width: "200px" }} onClick={() => setActiveTabIndex([0, 0 - activeTabIndex])}>Bloodline</button>
-                            <button className='m-4 rounded-xl p-10 text-white text-center' style={{ background: "#7F94E8", width: "200px" }} onClick={() => setActiveTabIndex([1, 1 - activeTabIndex])}>Jagriti</button>
+                            <button className='rounded-xl p-5 md:p-10 text-white text-center py-10 md:py-20 w-32' style={{ background: "#7F94E8" }} onClick={() => setActiveTabIndex([0, 0 - activeTabIndex])}>Bloodline</button>
+                            <button className='m-4 rounded-xl p-5 md:p-10 text-white text-center w-32' style={{ background: "#7F94E8" }} onClick={() => setActiveTabIndex([1, 1 - activeTabIndex])}>Jagriti</button>
                         </div>
                         <div className='flex justify-center'>
-                            <button className=' m-2 rounded-xl p-10 text-white text-center' style={{ background: "#7F94E8", width: "300px" }} onClick={() => setActiveTabIndex([2, 2 - activeTabIndex])}>Escape</button>
-                            <button className='rounded-xl p-10 text-white text-center' style={{ background: "#7F94E8", width: "300px" }} onClick={() => setActiveTabIndex([3, 3 - activeTabIndex])}>Disha</button>
+                            <button className=' m-2 rounded-xl p-10 text-white text-center w-40' style={{ background: "#7F94E8" }} onClick={() => setActiveTabIndex([2, 2 - activeTabIndex])}>Escape</button>
+                            <button className='rounded-xl p-10 text-white text-center w-40' style={{ background: "#7F94E8" }} onClick={() => setActiveTabIndex([3, 3 - activeTabIndex])}>Disha</button>
                         </div>
                     </div>
                 </div>
@@ -103,7 +103,7 @@ export default function Initiatives() {
                     >
                         <div className='m-2 p-2 py-10 text-center rounded-lg' style={{ background: "#c1c8e4" }}>
                             <div className='container'>
-                                <h2 className='text-5xl text-white pt-10 font-semibold'><motion.span>{items[activeTabIndex].title}</motion.span></h2>
+                                <h2 className='text-5xl text-white pt-10 font-semibold' style={{ color: "#374063" }}><motion.span>{items[activeTabIndex].title}</motion.span></h2>
                                 <p className='m-4'>{items[activeTabIndex].description}</p>
                             </div>
                         </div>
